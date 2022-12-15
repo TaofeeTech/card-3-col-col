@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Big shoulders;
+    src: url(./fonts/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Lexend;
+    src: url(./fonts/LexendDeca-VariableFont_wght.ttf);
+}
+
+
+
+div.container{
+    width: 100%;
+}
+
+div.card-holder{
+    width: fit-content;
+    display: flex;
+    margin: auto;
+    margin-top: 90px;
+    /* max-height: 77vh; */
+}
+
+div.card-1{
+    background-color: hsl(31, 77%, 52%);
+    padding: 20px 50px;
+    border-radius: 10px 0 0 10px;
+    max-width: 33%;
+}
+
+div.card-2{
+    background-color: hsl(184, 100%, 22%);
+    padding: 20px 50px;
+    max-width: 33%;
+}
+
+div.card-3{
+    background-color: hsl(179, 100%, 13%);
+    padding: 20px 50px;
+    border-radius: 0 10px 10px 0;
+    max-width: 33%;
+}
+
+div.card-logo{
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+div.card-logo img{
+    width: 100%;
+}
+
+div.card-head h1{
+    font-family: Big shoulders;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 30px;
+}
+
+div.card-body p{
+    font-family: Lexend;
+    text-transform: capitalize;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    max-height: 198px;
+}
+
+div.card-body{
+    max-width: 175px;
+    max-height: 198px;
+    margin-bottom: 70px;
+}
+
+div button{
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    text-transform: capitalize;
+    font-family: Lexend;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+div.btn-1 button{
+    color: hsl(31, 77%, 52%);
+}
+
+div.btn-2 button{
+    color: hsl(184, 100%, 22%);
+}
+
+div.btn-3 button{
+    color: hsl(179, 100%, 13%);
+}
+
+div.btn-1 button:hover{
+    background-color: hsl(31, 77%, 52%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+div.btn-2 button:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+div.btn-3 button:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+@media (max-width: 819px) {
+    div.card-holder{
+        width: fit-content;
+        display: flex;
+        margin: auto;
+        max-height: 77vh;
+        margin-top: 90px;
+    }
+    
+    div.card-body p{
+        font-family: Lexend;
+        text-transform: capitalize;
+        color: hsla(0, 0%, 100%, 0.75);
+        font-size: 15px;
+        line-height: 1.8;
+        letter-spacing: 1px;
+        max-height: 198px;
+    }
+    
+    div.card-body{
+        max-width: 180px;
+        max-height: 198px;
+        margin-bottom: 70px;
+    }
+
+    div.card-1{
+        padding: 20px 30px;
+    }
+    
+    div.card-2{
+        padding: 20px 30px;
+    }
+    
+    div.card-3{
+        padding: 20px 30px;
+    }
+
+    div button{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 699px) {
+    div.card-holder{
+        display: block;
+        width: fit-content;
+        /* max-height: auto; */
+        margin-inline: auto;
+        
+    }
+
+    div.card-1{
+        max-width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    div.card-2{
+        max-width: 100%;
+    }
+    
+    div.card-3{
+        max-width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    div.card-body{
+        max-width: 200px;
+        max-height: 198px;
+        margin-bottom: 70px;
+    }
+}
